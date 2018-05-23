@@ -47,16 +47,19 @@ namespace LabMunicipyLib
             {
                 Console.WriteLine("Vamos a inscribir una persona!");
                 Person p1 = new Person("Juan", "Perez", new DateTime(1995, 08, 03), null, "18.123.456-7", null, null);
+                Console.WriteLine(p1.First_name + p1.Last_name + " inscrito(a).");
             }
             if (opcion == 2)
             {
                 Console.WriteLine("Vamos a inscribir una propiedad!");
                 Address a1 = new Address("Apoquindo", 945, "Las Condes", "Santiago", p0, 2004, 3, 2, true, false);
+                Console.WriteLine("La propiedad " + a1.Number + " " + a1.Street + " inscrita.");
             }
             if (opcion == 3)
             {
                 Console.WriteLine("Vamos a inscribir un auto!");
                 Car c1 = new Car("Toyota", "X730", 1997, p0, "AB3709", 4, false);
+                Console.WriteLine("El auto " + c1.License_plate + ", marca " + c1.Brand + " inscrito.");
             }
 
 
