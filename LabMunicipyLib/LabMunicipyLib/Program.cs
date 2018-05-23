@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
+using ClassLibrary1;
 
 namespace LabMunicipyLib
 {
@@ -11,6 +12,19 @@ namespace LabMunicipyLib
     {
         static void Main(string[] args)
         {
+
+            // PREGUNTA 2
+
+            Person p1 = new Person("Juan", "Perez", new DateTime(1995, 08, 03), null, "18.123.456-7", null, null);
+            Address a1 = new Address("Apoquindo", 945, "Las Condes", "Santiago", p1, 2004, 3, 2, true, false);
+            Car c1 = new Car("Toyota", "X730", 1997, p1, "AB3709", 4, false);
+
+
+
+
+
+            //  PREGUNTA 1
+
             Assembly archivoSem = Assembly.LoadFile("C:/Users/vicen/source/repos/municipality-library-Vicentecorrea/LabMunicipyLib/LabMunicipyLib/ClassLibrary1.dll");
             foreach (Type tipo in archivoSem.GetTypes())
             {
